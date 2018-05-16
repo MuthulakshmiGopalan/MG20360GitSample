@@ -76,3 +76,15 @@ Changes to be committed:
 
 
 SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (master)
+$ git push origin master
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': MuthulakshmiGopalan
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/MuthulakshmiGopalan/MG20360GitSample.git
+   14db2b9..a2383fd  master -> master
+
