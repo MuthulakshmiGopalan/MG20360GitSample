@@ -1,0 +1,22 @@
+Git commands.txt
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ pwd
+/c/Users/syntel
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ git config --global http.proxy172.26.30.153
+error: invalid key: http.proxy172.26.30.153
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ git config --global http.proxy http://172.26.30.153:8080
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ git clone https://github.com/MuthulakshmiGopalan/MG20360GitSample.git
+Cloning into 'MG20360GitSample'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ git config --global http.sslverify false
