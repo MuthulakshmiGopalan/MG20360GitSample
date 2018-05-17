@@ -87,4 +87,52 @@ Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/MuthulakshmiGopalan/MG20360GitSample.git
    14db2b9..a2383fd  master -> master
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ pwd
+/c/Users/syntel
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ cd "D:\MG20360\Git\MG20360GitSample"
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (master)
+$ git branch SampleMG20360
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (master)
+$ pwd
+/d/MG20360/Git/MG20360GitSample
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (master)
+$ git checkout SampleMG20360
+Switched to branch 'SampleMG20360'
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ pwd
+/d/MG20360/Git/MG20360GitSample
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ ls
+'Git commands.txt'   less.exe.stackdump   README.md   Sample1
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ git add .
+warning: LF will be replaced by CRLF in less.exe.stackdump.
+The file will have its original line endings in your working directory.
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ git commit -m "Committed the branch"
+[SampleMG20360 0199ccd] Committed the branch
+ Committer: syntel <syntel@SYNCGDC4409.syntelorg.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 11 insertions(+)
+ create mode 100644 less.exe.stackdump
 
