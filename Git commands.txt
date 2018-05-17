@@ -140,5 +140,38 @@ $ git config --global user.name "Muthulakshmi Gopalan"
 
 SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
 $ git config --global user.email "Muthulakshmi_Gopalan@syntelinc.com"
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ git branch SampleMG20360-1
 
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ git checkout SampleMG20360-1
+Switched to branch 'SampleMG20360-1'
+M       Git commands.txt
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360-1)
+$ git commit -m "Committed the branch"
+On branch SampleMG20360-1
+Changes not staged for commit:
+        modified:   Git commands.txt
+
+no changes added to commit
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360-1)
+$ git add .
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360-1)
+$ git commit -m "Committed the branch"
+[SampleMG20360-1 6c65c00] Committed the branch
+ 1 file changed, 120 insertions(+)
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360-1)
+$ git push origin SampleMG20360-1
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.08 KiB | 2.08 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/MuthulakshmiGopalan/MG20360GitSample.git
+ * [new branch]      SampleMG20360-1 -> SampleMG20360-1
 
