@@ -1,0 +1,202 @@
+Git commands.txt
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ pwd
+/c/Users/syntel
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ git config --global http.proxy172.26.30.153
+error: invalid key: http.proxy172.26.30.153
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ git config --global http.proxy http://172.26.30.153:8080
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ git clone https://github.com/MuthulakshmiGopalan/MG20360GitSample.git
+Cloning into 'MG20360GitSample'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ git config --global http.sslverify false
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ pwd
+/c/Users/syntel
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ cd "D:\MG20360\Git"
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git
+$ git add Sample1
+fatal: not a git repository (or any of the parent directories): .git
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git
+$ git init
+Initialized empty Git repository in D:/MG20360/Git/.git/
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git (master)
+$ git clone https://github.com/MuthulakshmiGopalan/MG20360GitSample.git
+fatal: destination path 'MG20360GitSample' already exists and is not an empty directory.
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git (master)
+$ cd MG20360GitSample/
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (master)
+$ cat > Sample1
+Sample file for upload
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Sample1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (master)
+$ git add .
+warning: LF will be replaced by CRLF in Sample1.
+The file will have its original line endings in your working directory.
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Sample1
+
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (master)
+$ git push origin master
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': MuthulakshmiGopalan
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/MuthulakshmiGopalan/MG20360GitSample.git
+   14db2b9..a2383fd  master -> master
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ pwd
+/c/Users/syntel
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 ~ (master)
+$ cd "D:\MG20360\Git\MG20360GitSample"
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (master)
+$ git branch SampleMG20360
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (master)
+$ pwd
+/d/MG20360/Git/MG20360GitSample
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (master)
+$ git checkout SampleMG20360
+Switched to branch 'SampleMG20360'
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ pwd
+/d/MG20360/Git/MG20360GitSample
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ ls
+'Git commands.txt'   less.exe.stackdump   README.md   Sample1
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ git add .
+warning: LF will be replaced by CRLF in less.exe.stackdump.
+The file will have its original line endings in your working directory.
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ git commit -m "Committed the branch"
+[SampleMG20360 0199ccd] Committed the branch
+ Committer: syntel <syntel@SYNCGDC4409.syntelorg.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 11 insertions(+)
+ create mode 100644 less.exe.stackdump
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ git config --global user.name "Muthulakshmi Gopalan"
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ git config --global user.email "Muthulakshmi_Gopalan@syntelinc.com"
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ git branch SampleMG20360-1
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ git checkout SampleMG20360-1
+Switched to branch 'SampleMG20360-1'
+M       Git commands.txt
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360-1)
+$ git commit -m "Committed the branch"
+On branch SampleMG20360-1
+Changes not staged for commit:
+        modified:   Git commands.txt
+
+no changes added to commit
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360-1)
+$ git add .
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360-1)
+$ git commit -m "Committed the branch"
+[SampleMG20360-1 6c65c00] Committed the branch
+ 1 file changed, 120 insertions(+)
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360-1)
+$ git push origin SampleMG20360-1
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.08 KiB | 2.08 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/MuthulakshmiGopalan/MG20360GitSample.git
+ * [new branch]      SampleMG20360-1 -> SampleMG20360-1
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360-1)
+$ git add .
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360-1)
+$ git commit -m "Committed the branch"
+[SampleMG20360-1 046f3de] Committed the branch
+ 1 file changed, 37 insertions(+), 1 deletion(-)
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360-1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (master)
+$ ls
+'Git commands.txt'   README.md   Sample1
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (master)
+$ git pull
+remote: Counting objects: 15, done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 15 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (15/15), done.
+From https://github.com/MuthulakshmiGopalan/MG20360GitSample
+   14db2b9..0d9a545  SampleMG20360 -> origin/SampleMG20360
+Already up to date.
