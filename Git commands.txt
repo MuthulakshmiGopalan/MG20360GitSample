@@ -135,4 +135,10 @@ After doing this, you may fix the identity used for this commit with:
 
  1 file changed, 11 insertions(+)
  create mode 100644 less.exe.stackdump
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ git config --global user.name "Muthulakshmi Gopalan"
+
+SYNCGDC4409+syntel@SYNCGDC4409 MINGW64 /d/MG20360/Git/MG20360GitSample (SampleMG20360)
+$ git config --global user.email "Muthulakshmi_Gopalan@syntelinc.com"
+
 
